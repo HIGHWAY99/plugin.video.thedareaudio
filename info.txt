@@ -1,0 +1,202 @@
+http://www.thedarewall.com/
+http://www.thedarewall.com/templates/thedarewall/images/logo.png
+http://www.thedarewall.com/templates/thedarewall/images/header-bg.jpg
+
+http://www.thedarewall.com/templates/thedarewall/images/header-icons-blue.png
+
+http://www.thedarewall.com/mp3/images/bgcont.png
+http://www.thedarewall.com/mp3/images/bg.png
+
+### Player Logo
+http://www.thedarewall.com/logo.png
+
+domain					http://www.thedarewall.com/
+Viral						http://www.thedarewall.com/browse-viral-videos-1-date.html
+#		http://www.thedarewall.com/browse-viral-videos-1-views.html
+#		http://www.thedarewall.com/browse-viral-videos-1-rating.html
+#		http://www.thedarewall.com/browse-viral-videos-1-artist.html
+#		Page info
+#		#		http://www.thedarewall.com/browse-viral-videos-2-date.html
+#		rss	## seems to b
+#		#		http://www.thedarewall.com/rss.php?c=506
+#		#		#		c=506 seems to be for Viral category so c for category and 506 for viral
+#		#		http://www.thedarewall.com/rss.php?c=5
+#		#		# 	c=5 for Hip Hop  ## 529 for Dance ## 3  for RNB ## 2 for POP ## 1 for Rock/Alternative/Metal
+#		#		#		534 for Classic
+#		#		#		dude this site really sucks! you weren't kidding about the messed-up unstardized scripting of these pages.
+Hip Hop					http://www.thedarewall.com/browse-hiphop-videos-1-date.html
+Pop							http://www.thedarewall.com/browse-pop-videos-1-date.html
+R'N'B						http://www.thedarewall.com/browse-rnb-videos-1-date.html
+Dance						http://www.thedarewall.com/browse-dance_music-videos-1-date.html
+Rock/Alternative/Metal		http://www.thedarewall.com/browse-rock-videos-1-date.html
+TOP VIDEOS 			http://www.thedarewall.com/topvideos.html
+#		<optgroup label="By time">
+#			<option value="http://www.thedarewall.com/topvideos.html">All time</option>
+#			<option value="http://www.thedarewall.com/topvideos.html?do=recent">Last 30 days</option>
+#		<optgroup label="By category">
+#						<option value="http://www.thedarewall.com/topvideos.html?c=rock" >Rock/Alternative/metal</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=pop" >Pop</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=rnb" >R'n'B</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=hiphop" >Hip-Hop</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=latin" >Latin</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=world_reggae" >World/Reggae</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=unplugged_live" >Unplugged/live</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=viral" >Viral</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=trailer" >trailers</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=classic" >classic</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=sport" >Sport</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=fashion_beauty" >Fashion/Beauty</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=covers" >covers</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=news" >News/documentary/reviews</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=movies" >movies</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=dance_music" >Dance/dubstep/drum'n'base</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=country_blues_acoustic" >Country/Blues/Acoustic</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=arab-oriental" >arab/oriental</option>
+#						<option value="http://www.thedarewall.com/topvideos.html?c=Goldies" >Goldies</option>
+NEW VIDEOS			http://www.thedarewall.com/newvideos.html
+#		http://www.thedarewall.com/newvideos.html?&page=2
+#		<option value="http://www.thedarewall.com/newvideos.html">All time</option>
+#		<option value="http://www.thedarewall.com/newvideos.html?d=today">Today</option>
+#		<option value="http://www.thedarewall.com/newvideos.html?d=yesterday">Yesterday</option>
+#		<option value="http://www.thedarewall.com/newvideos.html?d=month">This month</option>
+RANDOM VIDEO		http://www.thedarewall.com/randomizer.php
+#		"var\s+flashvars\s*\n*\s*=\s*\n*\s*{\s*\n*\s*\n*\s*\n*\s*file\s*:\s*\n*\s*'http://www.youtube.com/watch?v=8WEtxJ4-sh4&ob=av2e'"
+SUGGEST VIDEO		http://www.thedarewall.com/suggest.html
+## used to add content, it seems.  so not needed. ##
+TV/MOVIE SECTION		http://www.thedarewall.com/tv
+RADIO						http://www.thedarewall.com/mp3/radio.php
+Box Office			http://www.thedarewall.com/tv/movietag/boxoffice
+RSS							http://www.thedarewall.com/rss.php
+
+http://www.thedarewall.com/newvideos.html?d=yesterday
+
+## re.compile('', re.MULTILINE | re.DOTALL | re.IGNORECASE).findall(html)
+### untested ###
+url='http://www.thedarewall.com/'
+html_top_tvshows=(html.split('<h3>Top Tv Show</h3>')[1]).split('</ul>')[0]
+tv_matches		=re.compile('<li>\s*\n*\s*<a\s*\n*\s*href="(http://www.thedarewall.com/tv/.+?)\s*\n*\s*"\s*\n*\s*>\n*\s*(.+?)\s*\n*\s*</a>\s*\n*\s*</li>').findall(html_top_tvshows)
+for path,name in tv_matches:
+html_top_movies =(html.split('<h3>Top movies</h3>')[1]).split('</ul>')[0]
+movie_matches	=re.compile('<li>\s*\n*\s*<a\s*\n*\s*href="(http://www.thedarewall.com/tv/watch/.+?-\d\d\d\d)\s*\n*\s*"\s*\n*\s*>\s*\n*\s*(.+?)\s*\n*\s*</a>\s*\n*\s*</li>').findall(html_top_movies)
+for path,name in movie_matches:
+html_categories =(html.split('<ul id="ul_categories">')[1]).split('</ul>')[0]
+category_matches	=re.compile('<li>\s*\n*\s*<a\s*\n*\s*href="(http://www.thedarewall.com/browse-.+?-videos-1-date.html)\s*\n*\s*"\s*\n*\s*>\s*\n*\s*.+?\s*\n*\s*</a>\s*\n*\s*</li>').findall(html_categories)
+for path,name in category_matches:
+
+
+
+### Pagination Info
+<a href="newvideos.html?&page=5">5</a>...<a href="newvideos.html?&page=178">178</a><a href="newvideos.html?&page=179">179</a><a href="newvideos.html?&page=2">next &raquo;</a></div>
+
+
+    <ul class="top-videos-list">
+
+<li  class="row2 column"><a title="Brazilian Swimwea..." class="row-img" href="http://www.thedarewall.com/fashiontv-hot/brazilian-swimwear-summer-2014-video_a8fab157c.html"><img src="http://i1.ytimg.com/vi/yqz2UxNbg-s/0.jpg" alt="Brazilian Swimwear: Summer 2014 |" /></a><div class="top-list-info-box"><span>FashionTV HOT</span><span><a href="http://www.thedarewall.com/fashiontv-hot/brazilian-swimwear-summer-2014-video_a8fab157c.html">Brazilian Swimwea...</a></span><span>1 week, 2 days ago</span></div></li><li  class="row1 column"><a title="Get Like Me (Expl..." class="row-img" href="http://www.thedarewall.com/nelly-nicki-minaj-pharrell/get-like-me-explicit-video_85ff1e069.html"><img src="http://i1.ytimg.com/vi/yFUAuIfJNJg/0.jpg" alt="Get Like Me (Explicit)" /></a><div class="top-list-info-box"><span>Nelly Nicki Minaj...</span><span><a href="http://www.thedarewall.com/nelly-nicki-minaj-pharrell/get-like-me-explicit-video_85ff1e069.html">Get Like Me (Expl...</a></span><span>2 weeks, 2 days ago</span></div></li><li  class="row2 column"><a title="212" class="row-img" href="http://www.thedarewall.com/azealia-banks-ft-lazy-jay/212-video_3f25d0065.html"><img src="http://i1.ytimg.com/vi/i3Jv9fNPjgk/0.jpg" alt="212" /></a><div class="top-list-info-box"><span>AZEALIA BANKS  FT...</span><span><a href="http://www.thedarewall.com/azealia-banks-ft-lazy-jay/212-video_3f25d0065.html">212</a></span><span>2 weeks, 2 days ago</span></div></li><li  class="row1 column"><a title="The Cube" class="row-img" href="http://www.thedarewall.com/ummet-ozcan/the-cube-video_ba5694a17.html"><img src="http://i1.ytimg.com/vi/XnVbIZx9U3M/0.jpg" alt="The Cube" /></a><div class="top-list-info-box"><span>Ummet Ozcan</span><span><a href="http://www.thedarewall.com/ummet-ozcan/the-cube-video_ba5694a17.html">The Cube</a></span><span>2 weeks, 3 days ago</span></div></li><li  class="row2 column"><a title="Wake Me Up" class="row-img" href="http://www.thedarewall.com/avicii/wake-me-up-video_1ba175a6c.html"><img src="http://i1.ytimg.com/vi/IcrbM1l_BoI/0.jpg" alt="Wake Me Up" /></a><div class="top-list-info-box"><span>Avicii</span><span><a href="http://www.thedarewall.com/avicii/wake-me-up-video_1ba175a6c.html">Wake Me Up</a></span><span>2 weeks, 5 days ago</span></div></li><li  class="row1 column"><a title="Hate Me Now" class="row-img" href="http://www.thedarewall.com/nas-ft-puff-daddy/hate-me-now-video_52e1b7bf1.html"><img src="http://i1.ytimg.com/vi/dKSJN3WWR3E/0.jpg" alt="Hate Me Now" /></a><div class="top-list-info-box"><span>Nas ft. Puff Daddy</span><span><a href="http://www.thedarewall.com/nas-ft-puff-daddy/hate-me-now-video_52e1b7bf1.html">Hate Me Now</a></span><span>4 weeks, 1 day ago</span></div></li><li  class="row2 column"><a title="As Long As I'm Alive" class="row-img" href="http://www.thedarewall.com/brass-knuckles-feat-john-ryan/as-long-as-im-alive-video_4a8c410d9.html"><img src="http://i1.ytimg.com/vi/ObAlLulk6xA/0.jpg" alt="As Long As I'm Alive" /></a><div class="top-list-info-box"><span>Brass Knuckles fe...</span><span><a href="http://www.thedarewall.com/brass-knuckles-feat-john-ryan/as-long-as-im-alive-video_4a8c410d9.html">As Long As I'm Alive</a></span><span>1 month ago</span></div></li><li  class="row1 column"><a title="The 100 1x01" class="row-img" href="http://www.thedarewall.com/promo/the-100-1x01-video_3690303a9.html"><img src="http://i1.ytimg.com/vi/p0fk90l_ay4/0.jpg" alt="The 100 1x01" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/the-100-1x01-video_3690303a9.html">The 100 1x01</a></span><span>1 month, 1 week ago</span></div></li><li  class="row2 column"><a title="Tunnel Vision" class="row-img" href="http://www.thedarewall.com/justin-timberlake/tunnel-vision-video_4f7c1b3b7.html"><img src="http://i1.ytimg.com/vi/07FYdnEawAQ/0.jpg" alt="Tunnel Vision" /></a><div class="top-list-info-box"><span>Justin Timberlake</span><span><a href="http://www.thedarewall.com/justin-timberlake/tunnel-vision-video_4f7c1b3b7.html">Tunnel Vision</a></span><span>1 month, 2 weeks ago</span></div></li><li  class="row1 column"><a title="Money" class="row-img" href="http://www.thedarewall.com/tecla/money-video_be891b0d8.html"><img src="http://i1.ytimg.com/vi/wV75fwZaBJY/0.jpg" alt="Money" /></a><div class="top-list-info-box"><span>TECLA</span><span><a href="http://www.thedarewall.com/tecla/money-video_be891b0d8.html">Money</a></span><span>1 month, 2 weeks ago</span></div></li><li  class="row2 column"><a title="Her Favorite Song" class="row-img" href="http://www.thedarewall.com/mayer-hawthorne/her-favorite-song-video_8a7d38e68.html"><img src="http://i1.ytimg.com/vi/RWkjcq_N2YQ/0.jpg" alt="Her Favorite Song" /></a><div class="top-list-info-box"><span>Mayer Hawthorne</span><span><a href="http://www.thedarewall.com/mayer-hawthorne/her-favorite-song-video_8a7d38e68.html">Her Favorite Song</a></span><span>1 month, 2 weeks ago</span></div></li><li  class="row1 column"><a title="Money" class="row-img" href="http://www.thedarewall.com/ivy-levan/money-video_5fdae29f7.html"><img src="http://i1.ytimg.com/vi/10CyFIBcoPM/0.jpg" alt="Money" /></a><div class="top-list-info-box"><span>Ivy Levan</span><span><a href="http://www.thedarewall.com/ivy-levan/money-video_5fdae29f7.html">Money</a></span><span>1 month, 2 weeks ago</span></div></li><li  class="row2 column"><a title="I'm Out" class="row-img" href="http://www.thedarewall.com/ciara-ft-nicki-minaj/im-out-video_4b55365ce.html"><img src="http://i1.ytimg.com/vi/1-TTNdyIMAE/0.jpg" alt="I'm Out" /></a><div class="top-list-info-box"><span>Ciara ft. Nicki M...</span><span><a href="http://www.thedarewall.com/ciara-ft-nicki-minaj/im-out-video_4b55365ce.html">I'm Out</a></span><span>1 month, 2 weeks ago</span></div></li><li  class="row1 column"><a title="Cosmopolitan Ling..." class="row-img" href="http://www.thedarewall.com/ftv/cosmopolitan-lingerie-show-2012-highlights-fashiontv-hot-video_db6fac55a.html"><img src="http://i1.ytimg.com/vi/VENeC8aXeW8/0.jpg" alt="Cosmopolitan Lingerie Show 2012: Highlights | FashionTV HOT" /></a><div class="top-list-info-box"><span>FTV</span><span><a href="http://www.thedarewall.com/ftv/cosmopolitan-lingerie-show-2012-highlights-fashiontv-hot-video_db6fac55a.html">Cosmopolitan Ling...</a></span><span>1 month, 3 weeks ago</span></div></li><li  class="row2 column"><a title="Twisted 1x04" class="row-img" href="http://www.thedarewall.com/promo/twisted-1x04-video_839646410.html"><img src="http://i1.ytimg.com/vi/c-ZsHHTC0A8/0.jpg" alt="Twisted 1x04" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/twisted-1x04-video_839646410.html">Twisted 1x04</a></span><span>1 month, 3 weeks ago</span></div></li><li  class="row1 column"><a title="Rizzoli and Isles..." class="row-img" href="http://www.thedarewall.com/promo/rizzoli-and-isles-4x02-video_d0820207d.html"><img src="http://i1.ytimg.com/vi/WyicH9YHcos/0.jpg" alt="Rizzoli and Isles 4x02" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/rizzoli-and-isles-4x02-video_d0820207d.html">Rizzoli and Isles...</a></span><span>1 month, 3 weeks ago</span></div></li><li  class="row2 column"><a title="Under the Dome 1x02" class="row-img" href="http://www.thedarewall.com/promo/under-the-dome-1x02-video_f63be9e10.html"><img src="http://i1.ytimg.com/vi/U_hQPcOkV3k/0.jpg" alt="Under the Dome 1x02" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/under-the-dome-1x02-video_f63be9e10.html">Under the Dome 1x02</a></span><span>1 month, 3 weeks ago</span></div></li><li  class="row1 column"><a title="Pretty Little Lia..." class="row-img" href="http://www.thedarewall.com/promo/pretty-little-liars-4x04-video_4b307d782.html"><img src="http://i1.ytimg.com/vi/zJbleSrNAgY/0.jpg" alt="Pretty Little Liars 4x04" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/pretty-little-liars-4x04-video_4b307d782.html">Pretty Little Lia...</a></span><span>1 month, 3 weeks ago</span></div></li><li  class="row2 column"><a title="We Can't Stop" class="row-img" href="http://www.thedarewall.com/miley-cyrus/we-cant-stop-video_1c58fa7bf.html"><img src="http://i1.ytimg.com/vi/LrUvu1mlWco/0.jpg" alt="We Can't Stop" /></a><div class="top-list-info-box"><span>Miley Cyrus</span><span><a href="http://www.thedarewall.com/miley-cyrus/we-cant-stop-video_1c58fa7bf.html">We Can't Stop</a></span><span>1 month, 4 weeks ago</span></div></li><li  class="row1 column"><a title="Millions" class="row-img" href="http://www.thedarewall.com/pusha-t-ft-rick-ross/millions-video_6a92ec4ec.html"><img src="http://i1.ytimg.com/vi/hU6VqlnrQhM/0.jpg" alt="Millions" /></a><div class="top-list-info-box"><span>Pusha T ft. Rick ...</span><span><a href="http://www.thedarewall.com/pusha-t-ft-rick-ross/millions-video_6a92ec4ec.html">Millions</a></span><span>2 months ago</span></div></li><li  class="row2 column"><a title="Reload" class="row-img" href="http://www.thedarewall.com/sebastian-ingrosso-tommy-trash-john-martin/reload-video_7084f16b4.html"><img src="http://i.ytimg.com/vi/GuAtcpFQpMw/0.jpg" alt="Reload" /></a><div class="top-list-info-box"><span>Sebastian Ingross...</span><span><a href="http://www.thedarewall.com/sebastian-ingrosso-tommy-trash-john-martin/reload-video_7084f16b4.html">Reload</a></span><span>2 months, 2 weeks ago</span></div></li><li  class="row1 column"><a title="Freaks (Explicit)" class="row-img" href="http://www.thedarewall.com/french-montana-ft-nicki-minaj/freaks-explicit-video_a8624a822.html"><img src="http://i.ytimg.com/vi/Z1FK7yKRVXQ/0.jpg" alt="Freaks (Explicit)" /></a><div class="top-list-info-box"><span>French Montana ft...</span><span><a href="http://www.thedarewall.com/french-montana-ft-nicki-minaj/freaks-explicit-video_a8624a822.html">Freaks (Explicit)</a></span><span>2 months, 2 weeks ago</span></div></li><li  class="row2 column"><a title="Cinderella" class="row-img" href="http://www.thedarewall.com/diana-vickers/cinderella-video_173bd5b6c.html"><img src="http://i.ytimg.com/vi/He4vgqumVKE/0.jpg" alt="Cinderella" /></a><div class="top-list-info-box"><span>Diana Vickers</span><span><a href="http://www.thedarewall.com/diana-vickers/cinderella-video_173bd5b6c.html">Cinderella</a></span><span>2 months, 2 weeks ago</span></div></li><li  class="row1 column"><a title="Crazy Kids" class="row-img" href="http://www.thedarewall.com/keha-ft-william/crazy-kids-video_773f21ef4.html"><img src="http://i.ytimg.com/vi/xdeFB7I0YH4/0.jpg" alt="Crazy Kids" /></a><div class="top-list-info-box"><span>Ke$ha ft. will.i.am</span><span><a href="http://www.thedarewall.com/keha-ft-william/crazy-kids-video_773f21ef4.html">Crazy Kids</a></span><span>2 months, 2 weeks ago</span></div></li>
+         
+			
+		</ul>
+
+########################
+				"var\s+flashvars\s*\n*\s*=\s*\n*\s*{\s*\n*\s*\n*\s*\n*\s*file\s*:\s*\n*\s*'http://www.youtube.com/watch?v=8WEtxJ4-sh4&ob=av2e',"
+					'logo.file': 'http://www.thedarewall.com/logo.png',
+					'logo.position': 'bottom-right',
+					'logo.linktarget': '_blank',
+					'logo.link': 'http://www.thedarewall.com/musicvideo.php?vid=a4d66eae9',
+					'logo.hide': 'false',
+					'logo.over': '1',
+					'logo.out': '1',
+					'abouttext': 'Dare player v1.5',
+					'aboutlink': 'http://www.thedarewall.com',
+
+					image: 'http://i1.ytimg.com/vi/8WEtxJ4-sh4/).jpg',
+########################
+
+		<select name="categories" size="1" onChange="javascript:document.location=this.value;">
+		<option value="http://www.thedarewall.com/topvideos.html">Select one</option>
+		<optgroup label="By time">
+			<option value="http://www.thedarewall.com/topvideos.html">All time</option>
+			<option value="http://www.thedarewall.com/topvideos.html?do=recent">
+				Last 30 days
+			</option>
+	</optgroup>
+
+		<optgroup label="By category">
+						<option value="http://www.thedarewall.com/topvideos.html?c=rock" >Rock/Alternative/metal</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=pop" >Pop</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=rnb" >R'n'B</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=hiphop" >Hip-Hop</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=latin" >Latin</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=world_reggae" >World/Reggae</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=unplugged_live" >Unplugged/live</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=viral" >Viral</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=trailer" >trailers</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=classic" >classic</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=sport" >Sport</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=fashion_beauty" >Fashion/Beauty</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=covers" >covers</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=news" >News/documentary/reviews</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=movies" >movies</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=dance_music" >Dance/dubstep/drum'n'base</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=country_blues_acoustic" >Country/Blues/Acoustic</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=arab-oriental" >arab/oriental</option>
+						<option value="http://www.thedarewall.com/topvideos.html?c=Goldies" >Goldies</option>
+					</optgroup>
+		</select>
+		</div></div></div>
+        <ul class="top-videos-list">
+
+   
+    
+			
+				<li  class="row2 column"><span class="no" >1</span><span class="view-count" >24,050</span><a title="Twisted 1x04" class="row-img" href="http://www.thedarewall.com/promo/twisted-1x04-video_839646410.html"><img src="http://i1.ytimg.com/vi/c-ZsHHTC0A8/0.jpg" alt="Twisted 1x04" /></a><div class="top-list-info-box"><span>Promo</span><span><a href="http://www.thedarewall.com/promo/twisted-1x04-video_839646410.html">Twisted 1x04 .</a></span></div></li><li  class="row1 column"><span class="no" >2</span><span class="view-count" >18,054</span><a title="International Love" class="row-img" href="http://www.thedarewall.com/pitbull-featuring-chris-brown/international-love-video_7fbd5a898.html"><img src="http://i4.ytimg.com/vi/CdXesX6mYUE/default.jpg" alt="International Love" /></a><div class="top-list-info-box"><span>Pitbull Featuring...</span><span><a href="http://www.thedarewall.com/pitbull-featuring-chris-brown/international-love-video_7fbd5a898.html">International Love .</a></span></div></li><li  class="row2 column"><span class="no" >3</span><span class="view-count" >16,984</span><a title="Feelings For You" class="row-img" href="http://www.thedarewall.com/low-deep-t/feelings-for-you-video_11f2d339f.html"><img src="http://i.ytimg.com/vi/mu_J51qMkNo/0.jpg" alt="Feelings For You" /></a><div class="top-list-info-box"><span>Low Deep T</span><span><a href="http://www.thedarewall.com/low-deep-t/feelings-for-you-video_11f2d339f.html">Feelings For You .</a></span></div></li><li  class="row1 column"><span class="no" >4</span><span class="view-count" >15,716</span><a title="Perfect Lady (Ori..." class="row-img" href="http://www.thedarewall.com/made-to-move/perfect-lady-original-mix-video_0e650561c.html"><img src="http://i.ytimg.com/vi/-IeoqcMp49o/0.jpg" alt="Perfect Lady (Original Mix)" /></a><div class="top-list-info-box"><span>Made To Move</span><span><a href="http://www.thedarewall.com/made-to-move/perfect-lady-original-mix-video_0e650561c.html">Perfect Lady (Ori... .</a></span></div></li><li  class="row2 column"><span class="no" >5</span><span class="view-count" >15,527</span><a title="Crazy Sexy Wild (..." class="row-img" href="http://www.thedarewall.com/inna/crazy-sexy-wild-official-music-video-video_977dd0f6b.html"><img src="http://i.ytimg.com/vi/lf30ySWeGys/0.jpg" alt="Crazy Sexy Wild (Official Music Video)" /></a><div class="top-list-info-box"><span>Inna</span><span><a href="http://www.thedarewall.com/inna/crazy-sexy-wild-official-music-video-video_977dd0f6b.html">Crazy Sexy Wild (... .</a></span></div></li><li  class="row1 column"><span class="no" >6</span><span class="view-count" >15,455</span><a title="Project X(Party T..." class="row-img" href="http://www.thedarewall.com/kid-cudi-pursuit-of-happiness-steve-aoki-remix/project-xparty-trailer-scene-hd-video_f9bba96ef.html"><img src="http://i.ytimg.com/vi/1jre6_FBBc0/0.jpg" alt="Project X(Party Trailer Scene) HD" /></a><div class="top-list-info-box"><span>Kid Cudi - Pursui...</span><span><a href="http://www.thedarewall.com/kid-cudi-pursuit-of-happiness-steve-aoki-remix/project-xparty-trailer-scene-hd-video_f9bba96ef.html">Project X(Party T... .</a></span></div></li><li  class="row2 column"><span class="no" >7</span><span class="view-count" >15,350</span><a title="Go Hard (La.La.La)" class="row-img" href="http://www.thedarewall.com/kreayshawn/go-hard-lalala-video_4402310ca.html"><img src="http://i.ytimg.com/vi/KleUddM2IPw/0.jpg" alt="Go Hard (La.La.La)" /></a><div class="top-list-info-box"><span>Kreayshawn</span><span><a href="http://www.thedarewall.com/kreayshawn/go-hard-lalala-video_4402310ca.html">Go Hard (La.La.La) .</a></span></div></li><li  class="row1 column"><span class="no" >8</span><span class="view-count" >15,275</span><a title="New Day (Dirty - ..." class="row-img" href="http://www.thedarewall.com/50-cent-ft-dr-dre-alicia-keys/new-day-dirty-audio-video_bcdac5f68.html"><img src="http://i.ytimg.com/vi/OLoGYJSNQGY/0.jpg" alt="New Day (Dirty - Audio)" /></a><div class="top-list-info-box"><span>50 Cent  ft Dr Dr...</span><span><a href="http://www.thedarewall.com/50-cent-ft-dr-dre-alicia-keys/new-day-dirty-audio-video_bcdac5f68.html">New Day (Dirty - ... .</a></span></div></li><li  class="row2 column"><span class="no" >9</span><span class="view-count" >15,222</span><a title="She's On Fire  (M..." class="row-img" href="http://www.thedarewall.com/bo-saris/shes-on-fire-maya-jane-coles-remix-video_54e940577.html"><img src="http://i.ytimg.com/vi/SPSieC1Alow/0.jpg" alt="She's On Fire  (Maya Jane Coles Remix)" /></a><div class="top-list-info-box"><span>Bo Saris</span><span><a href="http://www.thedarewall.com/bo-saris/shes-on-fire-maya-jane-coles-remix-video_54e940577.html">She's On Fire  (M... .</a></span></div></li><li  class="row1 column"><span class="no" >10</span><span class="view-count" >15,155</span><a title="Adorn" class="row-img" href="http://www.thedarewall.com/miguel/adorn-video_7aa646ffc.html"><img src="http://i.ytimg.com/vi/8dM5QYdTo08/0.jpg" alt="Adorn" /></a><div class="top-list-info-box"><span>Miguel</span><span><a href="http://www.thedarewall.com/miguel/adorn-video_7aa646ffc.html">Adorn .</a></span></div></li><li  class="row2 column"><span class="no" >11</span><span class="view-count" >15,147</span><a title="Momentum (Michael..." class="row-img" href="http://www.thedarewall.com/dimitri-vegas-like-mike-regi/momentum-michael-calfan-remix-available-august-27-video_ff6c4b7b4.html"><img src="http://i.ytimg.com/vi/H3_omhnhvbc/0.jpg" alt="Momentum (Michael Calfan Remix) [Available August 27]" /></a><div class="top-list-info-box"><span>Dimitri Vegas & L...</span><span><a href="http://www.thedarewall.com/dimitri-vegas-like-mike-regi/momentum-michael-calfan-remix-available-august-27-video_ff6c4b7b4.html">Momentum (Michael... .</a></span></div></li><li  class="row1 column"><span class="no" >12</span><span class="view-count" >15,089</span><a title="Turn On The Lights" class="row-img" href="http://www.thedarewall.com/future/turn-on-the-lights-video_0d6b6bc3b.html"><img src="http://i.ytimg.com/vi/zIrhcTkHX_A/0.jpg" alt="Turn On The Lights" /></a><div class="top-list-info-box"><span>Future</span><span><a href="http://www.thedarewall.com/future/turn-on-the-lights-video_0d6b6bc3b.html">Turn On The Lights .</a></span></div></li><li  class="row2 column"><span class="no" >13</span><span class="view-count" >15,085</span><a title="My Homies Still (..." class="row-img" href="http://www.thedarewall.com/lil-wayne-ft-big-sean/my-homies-still-explicit-video_61ae123ad.html"><img src="http://i.ytimg.com/vi/E_yVRZMFbLc/0.jpg" alt="My Homies Still (Explicit)" /></a><div class="top-list-info-box"><span>Lil Wayne ft. Big...</span><span><a href="http://www.thedarewall.com/lil-wayne-ft-big-sean/my-homies-still-explicit-video_61ae123ad.html">My Homies Still (... .</a></span></div></li><li  class="row1 column"><span class="no" >14</span><span class="view-count" >15,067</span><a title="No Lie (Explicit)" class="row-img" href="http://www.thedarewall.com/2-chainz-ft-drake/no-lie-explicit-video_3ae5d9b14.html"><img src="http://i.ytimg.com/vi/uQZMaG1eO74/0.jpg" alt="No Lie (Explicit)" /></a><div class="top-list-info-box"><span>2 Chainz ft. Drake</span><span><a href="http://www.thedarewall.com/2-chainz-ft-drake/no-lie-explicit-video_3ae5d9b14.html">No Lie (Explicit) .</a></span></div></li><li  class="row2 column"><span class="no" >15</span><span class="view-count" >15,055</span><a title="Tienes Que Creer ..." class="row-img" href="http://www.thedarewall.com/frankie-j/tienes-que-creer-en-mi-video_f6a13bdcb.html"><img src="http://i.ytimg.com/vi/3KvaUvwQno0/0.jpg" alt="Tienes Que Creer En Mí" /></a><div class="top-list-info-box"><span>Frankie J</span><span><a href="http://www.thedarewall.com/frankie-j/tienes-que-creer-en-mi-video_f6a13bdcb.html">Tienes Que Creer ... .</a></span></div></li><li  class="row1 column"><span class="no" >16</span><span class="view-count" >15,017</span><a title="Glad You Came" class="row-img" href="http://www.thedarewall.com/the-wanted/glad-you-came-video_d92ac1292.html"><img src="http://i.ytimg.com/vi/2ggzxInyzVE/0.jpg" alt="Glad You Came" /></a><div class="top-list-info-box"><span>The Wanted</span><span><a href="http://www.thedarewall.com/the-wanted/glad-you-came-video_d92ac1292.html">Glad You Came .</a></span></div></li><li  class="row2 column"><span class="no" >17</span><span class="view-count" >15,002</span><a title="Get It Started" class="row-img" href="http://www.thedarewall.com/pitbull-ft-shakira/get-it-started-video_2db7f0051.html"><img src="http://i.ytimg.com/vi/q5SG7U76tls/0.jpg" alt="Get It Started" /></a><div class="top-list-info-box"><span>Pitbull ft. Shakira</span><span><a href="http://www.thedarewall.com/pitbull-ft-shakira/get-it-started-video_2db7f0051.html">Get It Started .</a></span></div></li><li  class="row1 column"><span class="no" >18</span><span class="view-count" >14,999</span><a title="I Luv Dem Strippers" class="row-img" href="http://www.thedarewall.com/2-chainz-explicit-ft-nicki-minaj/i-luv-dem-strippers-video_65908c745.html"><img src="http://i.ytimg.com/vi/atHekn9KE18/0.jpg" alt="I Luv Dem Strippers" /></a><div class="top-list-info-box"><span>2 Chainz (Explici...</span><span><a href="http://www.thedarewall.com/2-chainz-explicit-ft-nicki-minaj/i-luv-dem-strippers-video_65908c745.html">I Luv Dem Strippers .</a></span></div></li><li  class="row2 column"><span class="no" >19</span><span class="view-count" >14,974</span><a title="Alone Together" class="row-img" href="http://www.thedarewall.com/daley-ft-marsha-ambrosius/alone-together-video_efdf4b8ac.html"><img src="http://i.ytimg.com/vi/uV2kWGSFYXM/0.jpg" alt="Alone Together" /></a><div class="top-list-info-box"><span>Daley ft. Marsha ...</span><span><a href="http://www.thedarewall.com/daley-ft-marsha-ambrosius/alone-together-video_efdf4b8ac.html">Alone Together .</a></span></div></li><li  class="row1 column"><span class="no" >20</span><span class="view-count" >14,945</span><a title="Pound The Alarm (..." class="row-img" href="http://www.thedarewall.com/nicki-minaj/pound-the-alarm-explicit-video_db7084063.html"><img src="http://i.ytimg.com/vi/vdrqA93sW-8/0.jpg" alt="Pound The Alarm (Explicit)" /></a><div class="top-list-info-box"><span>Nicki Minaj</span><span><a href="http://www.thedarewall.com/nicki-minaj/pound-the-alarm-explicit-video_db7084063.html">Pound The Alarm (... .</a></span></div></li><li  class="row2 column"><span class="no" >21</span><span class="view-count" >14,942</span><a title="As Long As You Lo..." class="row-img" href="http://www.thedarewall.com/justin-bieber-ft-big-sean/as-long-as-you-love-me-video_2e5f4fecd.html"><img src="http://i.ytimg.com/vi/R4em3LKQCAQ/0.jpg" alt="As Long As You Love Me" /></a><div class="top-list-info-box"><span>Justin Bieber ft....</span><span><a href="http://www.thedarewall.com/justin-bieber-ft-big-sean/as-long-as-you-love-me-video_2e5f4fecd.html">As Long As You Lo... .</a></span></div></li><li  class="row1 column"><span class="no" >22</span><span class="view-count" >14,939</span><a title="Ce Soir (Tonight)" class="row-img" href="http://www.thedarewall.com/the-deans-list-ft-dani-ummel/ce-soir-tonight-video_b3316c3c8.html"><img src="http://i.ytimg.com/vi/B6cKUnHIo14/0.jpg" alt="Ce Soir (Tonight)" /></a><div class="top-list-info-box"><span>The Dean's List  ...</span><span><a href="http://www.thedarewall.com/the-deans-list-ft-dani-ummel/ce-soir-tonight-video_b3316c3c8.html">Ce Soir (Tonight) .</a></span></div></li><li  class="row2 column"><span class="no" >23</span><span class="view-count" >14,917</span><a title="Settle Down" class="row-img" href="http://www.thedarewall.com/no-doubt/settle-down-video_7a0504cab.html"><img src="http://i.ytimg.com/vi/Pb_zZ3xItPI/0.jpg" alt="Settle Down" /></a><div class="top-list-info-box"><span>No Doubt</span><span><a href="http://www.thedarewall.com/no-doubt/settle-down-video_7a0504cab.html">Settle Down .</a></span></div></li><li  class="row1 column"><span class="no" >24</span><span class="view-count" >14,851</span><a title="Breaking Down" class="row-img" href="http://www.thedarewall.com/florence-the-machine/breaking-down-video_d16c4fcf9.html"><img src="http://i.ytimg.com/vi/gXWYOF0UhCk/0.jpg" alt="Breaking Down" /></a><div class="top-list-info-box"><span>Florence + The Ma...</span><span><a href="http://www.thedarewall.com/florence-the-machine/breaking-down-video_d16c4fcf9.html">Breaking Down .</a></span></div></li>
+				
+				
+				
+         
+
+		</ul>
+
+########################
+
+<div align="center">
+		<div class="boxside" style="width: 948px"><script type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=129483&u=mandabes&width=728&height=90"></script></div></div>
+		
+
+<div id="footer">
+<div class="footer-widgets">
+<div class="footer-widget footer-1 footer-third">
+<h3>Top Tv Show</h3>
+<ul>
+<li><a href="http://www.thedarewall.com/tv/the-big-bang-theory
+">Big Bang Theory</a> </li>
+<li> <a href="http://www.thedarewall.com/tv/how-i-met-your-mother">How i met your mother</a> </li>
+<li><a href="http://www.thedarewall.com/tv/game-of-thrones">Game Of Thrones</a> </li>
+<li><a href="http://www.thedarewall.com/tv/sons-of-anarchy">Sons Of anarchy</a> </li>
+<li><a href="http://www.thedarewall.com/tv/Dexter">Dexter</a> </li>
+</ul>
+</div>
+<div class="footer-widget footer-2 footer-third">
+<h3>Top movies</h3>
+<ul>
+<li><a href="http://www.thedarewall.com/tv/watch/ted-2012
+">TED</a> </li>
+<li><a href="http://www.thedarewall.com/tv/watch/the-perks-of-being-a-wallflower-2012
+">The Perks of Being a Wallflower</a> </li>
+<li><a href="http://www.thedarewall.com/tv/watch/the-dark-knight-rises-2012
+">THE DARK KNIGHT RISES</a> </li>
+<li><a href="http://www.thedarewall.com/tv/watch/savages-2012
+">Savages</a> </li>
+<li><a href="http://www.thedarewall.com/tv/movietag/boxoffice
+">Box Office</a> </li>
+</ul>
+</div>
+<div class="footer-widget footer-3 footer-third">
+<h3>Menu</h3>
+
+
+
+
+
+
+
+
